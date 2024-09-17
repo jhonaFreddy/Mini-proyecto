@@ -6,13 +6,17 @@ const alerta = document.querySelector('.aviso');
 const input = document.querySelector('.datos');
 
 toggleButton.addEventListener('click', toggleModal);
-closeButton.addEventListener('click', toggleModal);
+closeButton.addEventListener('click', dismiss);
 input.addEventListener('click', inicio)
+
+function dismiss(){
+    input.value = '';
+    modal.classList.toggle('hidden')
+}
 
 function toggleModal() {
     let cv = correo.value;
     let aprovado = false;
-    console.log(cv)
     document.querySelector(".parrafo_modal strong").textContent = cv
     if (cv.includes('@')) {
         let cont = cv.split('').filter(char => char === '@').length;
@@ -23,7 +27,7 @@ function toggleModal() {
                 if (cv[cv.length - 1] !== '.') {
                     modal.classList.toggle('hidden');
                     aprovado = true;
-                    document.body.style.overflow = 'hidden';
+                    document.body.style.overflow = 'scroll';
                 }
             }
         }
