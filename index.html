@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="./js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="vh-100 ">
+    <div class="container vw-100 p-0 d-sm-flex align-items-sm-center justify-content-sm-center m-sm-0 min-vw-100 col-sm">
+        <div class="d-sm-none bg-white">
+            <img src="./Nueva carpeta/illustration-sign-up-mobile.svg" class="h-100 w-100 d-sm-none" alt="">
+        </div>
+        <div class="  d-flex flex-column informacion p-4 h-100 p-sm-0 ">
+            <p class="titulo p-sm-4">
+                Stay updated!
+            </p>
+            <p class="contenido p-sm-2">
+                Join 60,000+ product managers receiving monthly updates on:
+            <ul class="p-0 p-sm-2">
+                <li>
+                    <img src="./Nueva carpeta/icon-list.svg" alt="">
+                    Product discovery and building what matters
+                </li>
+                <li>
+                    <img src="./Nueva carpeta/icon-list.svg" alt="">
+                    Measuring to ensure updates are a success
+                </li>
+                <li>
+                    <img src="./Nueva carpeta/icon-list.svg" alt="">
+                    And much more!
+                </li>
+            </ul>
+            </p>
+            <div class="d-flex flex-row justify-content-between email p-sm-1">
+                <div>Email address</div>
+                <div class="aviso">Valid email Required</div>
+            </div>
+            <div class=" d-flex flex-column p-sm-0">
+                <input type="text" class="datos w-100 p-2" placeholder="email@company.com">
+                <button id="toggleModal" class="rounded w-100 p-0">
+                    Subscribe to monthly newsletter
+                </button>
+            </div>
+        </div>
+        <div class="d-none d-sm-block">
+            <img src="./Nueva carpeta/illustration-sign-up-desktop.svg" class="p-sm-3 desktop" alt="">
+        </div>
+    </div>
+
+
+
+        <div class="modal hidden" id="modal">
+            <div class="modal_content" >
+                <div class= "contenido_modal d-flex flex-column">
+                    <figure class="imgConfirm" style="padding-left: 10px;">
+                        <img src="./Nueva carpeta/icon-success.svg" alt="">
+                    </figure>
+                        <h2 class="titulo_modal m-sm-1 p-sm-2" style="padding:0px 10px">Thanks for subscribing!</h2>
+                        <p class="parrafo_modal p-3 p-sm-3">
+                            A confirmation email has been sent to <strong>ash@loremcompany.com.</strong>
+                            Please open it and click the button inside to confirm your subscription. </p>
+                        <div class="d-flex flex-column align-items-center justify-content-end">
+                            <button id="closeButton" class="button_modal align-bottom">Dismiss message</button>     
+                    
+                        </div>  
+                </div>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

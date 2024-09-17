@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.informacion {
+    font-size: 15px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.titulo {
+    font-family: "Roboto", sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    font-size: 15px;
+    font-weight: 500;
+    height: 45px;
+    background-color: #232740;
+    color: #f5f7fc;
+    border: none;
+    box-shadow: 0px 6px 10px #232740;
+}
+
+button:hover {
+    background-color: #f25858;
+    box-shadow: 0px 15px 30px #f25858;
+}
+
+.email {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.datos {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.datos:focus {
+    color: black;
+    box-shadow: none;
+}
+
+
+.aviso {
+    color: red;
+    display: none
+}
+
+@media(max-width:576px) {
+    .informacion {
+        height: 100px;
+    }
+
+    body {
+        background-color: #232740;
+    }
+}
+
+
+
+.container_modal {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.button_modal {
+    width: 310px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #232740;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    margin-top: 150px;
+}
+
+.button_modal:hover {
+    background-color: #f25858;
+    box-shadow: 0px 15px 30px #f25858;
+}
+button:active {
+    background-color: #232740;
+    color: white;
+}
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.233);
+    display: grid;
+    place-content: center;
+}
+
+.modal_content {
+    width: 100vw;
+    background-color: white;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.hidden{
+    display: none;
+}
+.titulo_modal {
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+@media(min-width:576px) {
+    .contenido_modal {
+        background-color: white;
+        width: 400px;
+        height: 400px;
+        padding-top: 50px;
+        border-radius: 16px;
+        padding: 0px 30px
+    }
+    
+    figure{
+        margin-top: 20px;
+    }
+    .button_modal{
+        margin-top: -20px;
+    }
+    .modal_content{
+        border-radius: 0px;
+        background-color: #232740;
+        overflow: hidden;
+    }
+
+}
