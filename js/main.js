@@ -42,11 +42,12 @@ function inicio() {
     input.style.boxShadow = 'none'
     input.style.borderColor = 'black';
     input.style.color = 'black'
+    input.style.background = 'none'
 }
 
 function validEmail() {
     alerta.style.display = 'block'
-    input.style.boxShadow = '1px 1px 20px #db8787'
-    input.style.borderColor = 'red';
+    input.style.borderColor = 'rgb(235, 109, 109)';
+    input.style.background = '#ffe8e6'
     input.style.color = 'red'
 }
